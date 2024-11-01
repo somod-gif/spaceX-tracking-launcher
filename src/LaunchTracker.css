@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #1d3557;
+}
+
+/* Launches List Styling */
+.launches-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.launch-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.launch-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.launch-item-name {
+    font-size: 1.5rem;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.launch-item-date,
+.launch-item-rocket,
+.launch-item-site,
+.launch-item-details {
+    color: #4a4a4a;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.launch-item-lauched {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #457b9d;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.launch-item-lauched:hover {
+    background-color: #1d3557;
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination-button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination-button:disabled,
+.pagination-button.active {
+    background-color: #007bff;
+    color: #fff;
+    cursor: default;
+}
+
+/* Loading and Error States */
+.loading,
+.error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e63946;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .launch-item {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .pagination-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
